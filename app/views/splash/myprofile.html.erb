@@ -1,0 +1,79 @@
+<header  class="header">
+  <div class="header__logo-box">
+    <div onclick="myFunction2()"> <div><%= image_tag 'menu.png',class: 'header__logo' %></div></div>
+  </div>
+  <div class="header__heading-box">
+    <h1 class="header__heading">You</h1>
+  </div>
+  <div class="header__logo-box">
+    <a href="/"> <div><%= image_tag 'Note - simple-line-icons.png',class: 'header__logo' %></div></a>
+  </div>
+</header>
+<div id="menu-back-draw" class="menu-back-draw" onclick="myFunction2()"> </div>
+<section id="main-menu" class="Menu-container">
+  <div class="Menu">
+    <div class="Menu-info">
+      <div class="Menu-info-photo"><%= image_tag 'OvalP.png'%></div>
+      <div class="Menu-info-mail"><p>will.frank@email.com</p></div>
+    </div>
+    <a href="/myprofile" class="Menu-option"><div><%= image_tag 'Group 6 Copy1.1.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 2.1.png'%></div></a>
+    <a href="/savedbyme" class="Menu-option"><div><%= image_tag 'Group 6 Copy 6.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 3.1.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 5.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 7.png'%></div></a>
+  </div>
+</section>
+<section class="section-profile">
+  <a href="/editprofile">
+  <div class="Menu-info-padding-small ">
+    <div class="Menu-info-photo "><%= image_tag 'OvalP.png'%></div>
+    <div class="Menu-info-mail"><p>M, 27, Atlanta, GA</p></div>
+  </div>
+  </a>
+
+  <div class="about"><p>About</p></div>
+  <div class="stats">
+    <p class="padding-medium-left">Stats</p>
+    <div class="stats-container">
+      <div class="Moments">
+        <div class="count"><p>8</p></div>
+        <div><p>Moments</p></div>
+      </div>
+      <div class="Followers">
+        <div class="count"><p>16</p></div>
+        <div><p>Followers</p></div>
+      </div>
+      <div class="Following">
+        <div class="count"><p>34</p></div>
+        <div><p>Following</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="moment">
+    <p class="moment__para">Moments</p>
+    <div class="moment-container">
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+        <div class="moment__image"><%= image_tag 'Rectangle 5.png'%></div>
+    </div>
+  </div>
+
+  <div class="feed-camera__btn">
+    <%= image_tag 'Camera - simple-line-icons.png',class: 'feed-camera__btn-img' %>
+  </div>
+</section>
+
+
+<script>
+    function myFunction2() {
+        document.getElementById("menu-back-draw").classList.toggle('menu-back-draw-show');
+        document.getElementById("main-menu").classList.toggle('Menu-container-show')
+    }
+</script>

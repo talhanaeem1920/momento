@@ -1,0 +1,74 @@
+<header  class="header">
+  <div class="header__logo-box">
+    <div onclick="myFunction2()"> <div><%= image_tag 'menu.png',class: 'header__logo' %></div></div>
+  </div>
+  <div class="header__heading-box">
+    <h1 class="header__heading"> My Feed</h1>
+  </div>
+  <div class="header__logo-box">
+    <a href="#"> <div><%= image_tag 'magnifier.png',class: 'header__logo' %></div></a>
+  </div>
+</header>
+<div id="menu-back-draw" class="menu-back-draw" onclick="myFunction2()"> </div>
+<section id="main-menu" class="Menu-container">
+  <div class="Menu">
+    <div class="Menu-info">
+      <div class="Menu-info-photo"><%= image_tag 'OvalP.png'%></div>
+      <div class="Menu-info-mail"><p>will.frank@email.com</p></div>
+    </div>
+    <a href="/myprofile" class="Menu-option"><div><%= image_tag 'Group 6 Copy1.1.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 2.1.png'%></div></a>
+    <a href="/savedbyme" class="Menu-option"><div><%= image_tag 'Group 6 Copy 6.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 3.1.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 5.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 7.png'%></div></a>
+  </div>
+</section>
+<section class="feed">
+  <div class="feed-container">
+    <a href="/feeddetails">
+      <div class="feed-container-img">
+        <%= image_tag 'Rectangle 2.png',class: 'feed__pic' %>
+      </div>
+    </a>
+    <div class="feed-container-reactions">
+      <div><%= image_tag 'Oval.png',class: 'feed-reaction__pic' %></div>
+      <div><%= image_tag 'Heart - simple-line-icons.png',class: 'feed__heart' %></div>
+    </div>
+  </div>
+
+  <div class="feed-container">
+    <a href="/feeddetails">
+      <div class="feed-container-img">
+        <%= image_tag 'Rectangle 2.png',class: 'feed__pic' %>
+      </div>
+    </a>
+    <div class="feed-container-reactions">
+      <div><%= image_tag 'Oval (1).png',class: 'feed-reaction__pic' %></div>
+      <div><%= image_tag 'Heart - simple-line-icons.png',class: 'feed__heart' %></div>
+    </div>
+  </div>
+
+  <div class="feed-container">
+    <a href="/feeddetails">
+      <div class="feed-container-img">
+        <%= image_tag 'Rectangle 2.png',class: 'feed__pic' %>
+      </div>
+    </a>
+    <div class="feed-container-reactions">
+      <div><%= image_tag 'Oval.png',class: 'feed-reaction__pic' %></div>
+      <div><%= image_tag 'Heart - simple-line-icons.png',class: 'feed__heart' %></div>
+    </div>
+  </div>
+
+  <div class="feed-camera__btn">
+    <%= image_tag 'Camera - simple-line-icons.png',class: 'feed-camera__btn-img' %>
+  </div>
+</section>
+
+<script>
+  function myFunction2() {
+      document.getElementById("menu-back-draw").classList.toggle('menu-back-draw-show');
+      document.getElementById("main-menu").classList.toggle('Menu-container-show')
+  }
+</script>

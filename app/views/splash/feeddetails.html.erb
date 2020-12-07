@@ -1,0 +1,89 @@
+<header class="header">
+  <div class="header__logo-box">
+    <a href="/feed"> <div><%= image_tag 'back.svg',class: 'header__logo' %></div></a>
+  </div>
+  <div class="header__heading-box">
+    <h1 class="header__heading">Mellisa’s Moment</h1>
+  </div>
+  <div id="box" class="header__logo-box">
+    <div id="menu" onclick="myFunction()" > <div><%= image_tag 'option-icon.png',class: 'header__logo' %></div></div>
+  </div>
+  <div  id="cross" onclick="myFunction1()" class="cross-icon"><%= image_tag 'cross1.png',class: 'header__logo' %></div>
+</header>
+
+<div id="options-box" class="options-container">
+  <div class="options"><%= image_tag 'Group 6 Copy 3.png' %></div>
+  <div class="options"><%= image_tag 'Group 6 Copy 2.png' %></div>
+  <div class="options"><%= image_tag 'Group 6 Copy.png' %></div>
+  <div class="options"><%= image_tag 'Group 6.png' %></div>
+</div>
+
+<section id="feed-box" class="feeddetail">
+
+  <div class="container-top-reactions">
+     <div class="container-top-reactions-left">
+       <%= image_tag 'Oval3.png',class: 'header__logo' %>
+     </div>
+     <div class="container-top-reactions-right">
+       <%= image_tag 'Oval4.png' %>
+       <%= image_tag 'Oval5.png' %>
+       <%= image_tag 'Oval6.png' %>
+       <%= image_tag 'Oval7.png' %>
+     </div>
+   </div>
+  <div class="container-img ">
+    <%= image_tag 'Rectangle 3.png' %>
+  </div>
+  <div class="text-container">
+    <p>It was a humorously perilous business for both of us. For, before we proceed further</p>
+  </div>
+  <div class="container-location">
+    <%= image_tag 'Location-pin - simple-line-icons.png' %>
+  </div>
+  <div class="container-likes">
+    <div class="container-likes-left">
+      <%= image_tag 'Group 3.png' %>
+    </div>
+    <div class="container-likes-right">
+      <%= image_tag 'Group 3 Copy.png' %>
+    </div>
+  </div>
+  <div class="container-comments-header">
+    <%= image_tag '21 Comments.png' %>
+    <%= image_tag 'View All.png' %>
+  </div>
+  <div class="container-comments">
+    <div class="comment-box">
+      <%= image_tag 'Oval 8.png' %>
+    </div>
+    <div class="comment-box">
+      <%= image_tag 'Oval9.png' %>
+    </div>
+  </div>
+</section>
+
+<footer class="chat-bar stick-bottom">
+  <input type="text" class="chat-bar__input" placeholder="">
+  <div class="chat-bar-logo-box">
+    <a href=""><%= image_tag 'Group 4 Copy.png',class: 'chat-bar__logo-smile' %></a>
+    <a href=""><%= image_tag 'Group 4.png',class: 'chat-bar__logo-send' %></a>
+  </div>
+</footer>
+
+
+
+<script>
+  function myFunction() {
+      //document.querySelector('#menu').style.display = 'none';
+      document.getElementById('menu').style.display = 'none';
+      document.getElementById('cross').style.display = 'block';
+      document.getElementById('options-box').style.display = 'block';
+      document.getElementById('feed-box').style.marginTop = '-20.6rem';
+  }
+  function myFunction1(){
+      document.getElementById('menu').style.display = 'block';
+      document.getElementById('cross').style.display = 'none';
+      document.getElementById('options-box').style.display = 'none';
+      document.getElementById('feed-box').style.marginTop = '0';
+  }
+</script>

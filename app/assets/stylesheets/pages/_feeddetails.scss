@@ -1,0 +1,103 @@
+.feeddetail {
+  max-width: 60rem;
+  margin: auto;
+
+  border: 1px solid rgba(0,0,0,.02);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container-top-reactions {
+  padding: 1rem 1.5rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  width: 100%;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'ABeeZee', SansSerif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #4A4A4A;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.container-location {
+  width: 100%;
+  padding: 0 1.6rem;
+}
+.container-likes {
+  width: 100%;
+  height: 5.6rem;
+  display: flex;
+  border-top: 1px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
+
+  &-left,&-right {
+    &:not(:last-child) {
+      border-right: 1px solid #F1F1F1;;
+    }
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container-comments-header {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.6rem;
+}
+.comment-box {
+  width: 100%;
+  height: 5.9rem;
+}
+
+.cross-icon {
+  display: none;
+  height: 2.1rem;
+  position: fixed;
+  top: 4.7976012% ;
+  right:2.9333333% ;
+}
+.options-container {
+
+  display: none;
+  max-width: 91.46666667%;
+  height: 28.7856072%;
+
+  background-image: url("Rectangle 6.png");
+  background-size: cover;
+  border: 1px solid #EDEDED;
+  border-radius: .4rem;
+  box-sizing: border-box;
+  -webkit-backdrop-filter: blur(41.9392px);
+  backdrop-filter: blur(41.9392px);
+  position: sticky;
+  top: 11%;
+  right: 4.26666667%;
+  margin-left: auto;
+
+}

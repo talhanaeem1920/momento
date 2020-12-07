@@ -1,0 +1,43 @@
+<header  class="header">
+  <div class="header__logo-box">
+    <div onclick="myFunction2()"> <div><%= image_tag 'menu.png',class: 'header__logo' %></div></div>
+  </div>
+  <div class="header__heading-box">
+    <h1 class="header__heading"> Saved by me</h1>
+  </div>
+  <div class="header__logo-box">
+    <a href="#"> <div></div></a>bundle
+
+  </div>
+</header>
+<div id="menu-back-draw" class="menu-back-draw" onclick="myFunction2()"> </div>
+<section id="main-menu" class="Menu-container">
+  <div class="Menu">
+    <div class="Menu-info">
+      <div class="Menu-info-photo"><%= image_tag 'OvalP.png'%></div>
+      <div class="Menu-info-mail"><p>will.frank@email.com</p></div>
+    </div>
+    <a href="/myprofile" class="Menu-option"><div><%= image_tag 'Group 6 Copy1.1.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 2.1.png'%></div></a>
+    <a href="/savedbyme" class="Menu-option"><div><%= image_tag 'Group 6 Copy 6.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 3.1.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 5.png'%></div></a>
+    <a href="#" class="Menu-option"><div><%= image_tag 'Group 6 Copy 7.png'%></div></a>
+  </div>
+</section>
+
+<section class="images-container">
+
+</section>
+
+
+
+
+
+
+<script>
+    function myFunction2() {
+        document.getElementById("menu-back-draw").classList.toggle('menu-back-draw-show');
+        document.getElementById("main-menu").classList.toggle('Menu-container-show')
+    }
+</script>

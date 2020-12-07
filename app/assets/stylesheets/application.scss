@@ -1,0 +1,42 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/link";
+@import "components/form";
+@import "components/chat-bar";
+
+@import "layout/header";
+@import "layout/main";
+
+@import "pages/splash";
+@import "pages/signin";
+@import "pages/register";
+@import "pages/setprofile";
+@import "pages/resetpassword";
+@import "pages/createnewpassword";
+@import "pages/feed";
+@import "pages/feeddetails";
+@import "pages/myprofile";
+@import "pages/editprofile";
+@import "pages/savedbyme";

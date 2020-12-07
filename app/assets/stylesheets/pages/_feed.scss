@@ -1,0 +1,99 @@
+.feed{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+
+  &-container {
+    max-width: 91.466666%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+
+   &-img {
+     width: 100%;
+   }
+    &-reactions {
+      width: 100%;
+      padding: .5rem .2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-camera__btn {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background-color: #FF6265;
+    box-shadow: 0 3px 9px rgba(102, 102, 102, 0.204965);
+    position: fixed;
+    bottom: 2.39888%;
+    right: 4.26666667%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+.Menu-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  background: #FFFFFF;
+  z-index: 30;
+  transform: scaleX(0);
+  transition: all .4s;
+  transform-origin: left;
+  &-show {
+    transform: scaleX(1);
+  }
+}
+.Menu {
+
+  &-info {
+    display: flex;
+    padding: 3.2rem 0;
+    padding-left: 1.6rem;
+    border-bottom: 1px solid #f1f1f1;
+    &-mail {
+      display: flex;
+      align-items: center;
+      padding: 0 1.6rem;
+      padding-top: 2.5rem;
+
+      font-family: 'ABeeZee',SansSerif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      color: #4A4A4A;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+  }
+
+}
+.menu-back-draw {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ffffff91;
+  transform: scaleX(0);
+  z-index: 20;
+  transition: all .4s;
+  transform-origin: left;
+  &-show {
+    transform: scaleX(1);
+  }
+}
